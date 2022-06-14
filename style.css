@@ -1,0 +1,120 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  max-width: 50%;
+}
+nav {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+
+  display: block;
+
+  color: black;
+}
+.burger-menu {
+  display: block;
+  height: 24px;
+  padding-top: 20px;
+}
+
+.banner {
+  background-image: url(https://festadafrancofonia.com/wp-content/uploads/2022/02/02-banner@2x-scaled.jpg);
+  background-size: cover;
+}
+
+.banner div {
+  color: white;
+  padding: 40px 20px;
+}
+
+.banner div p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner div h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main {
+  padding: 0 30px;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 1fr;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 29px;
+}
+main section:first-child {
+  padding-bottom: 30px;
+}
+
+main section img {
+  max-width: 100%;
+}
+
+hr {
+  width: 90%;
+}
+
+.bottom-section p {
+  text-align: center;
+  font-weight: bold;
+}
+
+i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+i:hover {
+  opacity: 0.2;
+}
+
+.bottom-section div {
+  padding-top: 50px;
+  text-align: center;
+}
+
+footer {
+  padding-top: 20px;
+  padding-right: 5px;
+  background-color: #2b2e34;
+  color: white;
+  font-size: 10px;
+}
+
+footer div {
+  padding-left: 7px;
+}
+footer div a {
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
