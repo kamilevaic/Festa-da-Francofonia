@@ -87,6 +87,11 @@ hr {
   font-weight: bold;
 }
 
+.bottom-section div {
+  padding-top: 40px;
+  text-align: center;
+}
+
 i {
   font-size: 20px;
   padding-right: 5px;
@@ -94,11 +99,6 @@ i {
 
 i:hover {
   opacity: 0.2;
-}
-
-.bottom-section div {
-  padding-top: 50px;
-  text-align: center;
 }
 
 footer {
@@ -117,4 +117,79 @@ footer div a {
   display: block;
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  nav a {
+    padding-right: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .logo {
+    flex-grow: 1;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  }
+
+  main section:nth-child(2) {
+    align-self: center;
+  }
+  .red-text {
+    margin-top: 0%;
+  }
+
+  .bottom-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .bottom-section div {
+    display: flex;
+    margin-left: auto;
+    justify-self: flex-end;
+  }
+
+  .bottom-section img {
+    max-width: 150px;
+    padding-right: 50px;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+
+  footer div {
+    display: inline;
+  }
+
+  footer div a {
+    display: inline;
+    padding-left: 100px;
+  }
+  footer p {
+    display: inline;
+  }
 }
